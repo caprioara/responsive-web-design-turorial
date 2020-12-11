@@ -2,7 +2,20 @@ body {
     font-size: 1.125rem;
     color: #707070;
     margin: 0;
+
 }
+
+/* @media (min-width: 600px) and (orientation: landscape) {
+    body {
+        background: orange;
+    }
+} */
+
+/* @media (min-width: 500px) and (max-width: 599px) {
+    body {
+        background: orange;
+    }
+} */
 
 /* Typografy */
 
@@ -39,9 +52,36 @@ img {
 .columns {
     display: flex;
     margin: 1em 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
 }
 
 .col-bg {
     background-color: #212614;
+    color: #fff;
     padding: 1em;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
 }
