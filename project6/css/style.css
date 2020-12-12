@@ -17,6 +17,12 @@ img {
     display:block;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
 /* ========================
             Typogragy
    ======================== */
@@ -28,6 +34,10 @@ h3 {
     font-weight: 400;
     color: #143774;
     margin-top: 0;
+}
+
+h3 {
+    color: #1792d2;
 }
 
 h1 {
@@ -89,6 +99,10 @@ strong {
 .widget-title {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+}
+
+.widget-post-title {
+    color: #143774;
 }
 
 /* ========================
