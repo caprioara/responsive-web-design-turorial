@@ -110,11 +110,13 @@ header {
     }
 
     main {
-        width: 75%;
+        width: 70%;
     }
 
     aside {
-        width: 23%;
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
     }
 }
 
@@ -218,6 +220,17 @@ nav a:focus {
         order: -1;
     }
 }
+
+/* widget */
+
+.sidebar-widget {
+    border: 20px solid #efefef;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+
+
 
 /* @media (min-width: 550px) {
     .article-recent-main {
