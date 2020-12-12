@@ -12,6 +12,11 @@ body {
     font-weight: 300;
 }
 
+img {
+    max-width: 100%;
+    display:block;
+}
+
 /* ========================
             Typogragy
    ======================== */
@@ -77,18 +82,34 @@ strong {
 
 .container {
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 header {
     background-color: #f8f8f8;
     padding: 2em 0;
+    text-align: center;
+}
+
+@media (min-width: 675px) {
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 75%;
+    }
+
+    aside {
+        width: 23%;
+    }
 }
 
 /* Navigation */
@@ -126,14 +147,6 @@ nav a:focus {
 }
 
 @media (max-width: 675px) {
-    header {
-        text-align: center;
-    }
-
-    .container-nav {
-        flex-direction: column;
-    }
-
     nav ul {
         flex-direction: column;
     }
