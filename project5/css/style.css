@@ -84,9 +84,12 @@ nav a:focus {
 }
 
 @media (max-width: 675px) {
+    header {
+        text-align: center;
+    }
+
     .container-nav {
         flex-direction: column;
-        text-align: center;
     }
 
     .nav-list {
@@ -94,6 +97,6 @@ nav a:focus {
     }
     
     .nav-list-item {
-        padding: .75em 0;
+        margin: .5em 0;
     }
 }
