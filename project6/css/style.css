@@ -92,11 +92,11 @@ nav a:focus {
         flex-direction: column;
     }
 
-    .nav-list {
+    nav ul {
         flex-direction: column;
     }
     
-    .nav-list-item {
+    nav li {
         margin: .5em 0;
     }
 }
