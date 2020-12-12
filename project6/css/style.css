@@ -98,9 +98,10 @@ strong {
 }
 
 header {
-    background-color: #f8f8f8;
+    background-color: rgb(249, 250, 255);
     padding: 2em 0;
     text-align: center;
+    margin-bottom: 3em;
 }
 
 @media (min-width: 675px) {
@@ -202,6 +203,19 @@ nav a:focus {
         min-height: 250px;
         object-fit: cover;
         /* object-position: left; */
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-image {
+        order: -2;
+    }
+    
+    .article-info {
+        order: -1;
     }
 }
 
