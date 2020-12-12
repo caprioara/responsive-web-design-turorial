@@ -87,7 +87,7 @@ strong {
 
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -182,3 +182,35 @@ nav a:focus {
 .article-recent-secondary {
     order: 1;
 }
+
+@media (min-width: 675px){
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-image {
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
+        /* object-position: left; */
+    }
+}
+
+/* @media (min-width: 550px) {
+    .article-recent-main {
+        margin-top: -3em;
+    }
+
+    .article-info {
+        text-align: right;
+    }
+} */
